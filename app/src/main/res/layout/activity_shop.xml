@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="购物商城"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#8fc0d1"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-90px"
+        android:layout_marginRight="10px"
+        android:layout_gravity="right"
+        android:background="@drawable/timg"
+        android:onClick="onClick" />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#cee0e9"
+        android:layout_marginTop="-70sp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/main_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_type"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/main_type"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/main_community"
+            android:paddingTop="10dp"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/main_cart"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/MainButtonStyle"
+            android:drawableTop="@drawable/main_user"
+            android:text="个人中心" />
+    </RadioGroup>
+
+</LinearLayout>
